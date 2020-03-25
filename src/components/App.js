@@ -1,5 +1,10 @@
 import React, { createContext, useState } from "react";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Redirect
+} from "react-router-dom";
 import "../styles/App.sass";
 import Nav from "./Nav";
 import Home from "./Home";
@@ -12,10 +17,19 @@ function App() {
     <Router>
       <Nav />
       <Switch>
-        <Route exact path="/" component={Home} />
-        <Route exact path="/Curiosities" component={Curiosities} />
-        <Route exact path="/Inspirations" component={Inspirations} />
-        <Route exact path="/LifeDrawings" component={LifeDrawings} />
+        <Redirect exact from="/" to="/mdolatowska" />
+        <Route exact path="/mdolatowska" component={Home} />
+        <Route exact path="/mdolatowska/Curiosities" component={Curiosities} />
+        <Route
+          exact
+          path="/mdolatowska/Inspirations"
+          component={Inspirations}
+        />
+        <Route
+          exact
+          path="/mdolatowska/LifeDrawings"
+          component={LifeDrawings}
+        />
       </Switch>
     </Router>
   );

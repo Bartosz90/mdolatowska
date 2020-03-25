@@ -4,10 +4,10 @@ import "../styles/Nav.sass";
 
 const Nav = () => {
   const links = [
-    { id: 1, name: "home", path: "/" },
-    { id: 2, name: "curiosities", path: "/Curiosities" },
-    { id: 3, name: "inspirations", path: "/Inspirations" },
-    { id: 4, name: "life drawings", path: "/LifeDrawings" }
+    { id: 1, name: "home", path: "/mdolatowska" },
+    { id: 2, name: "curiosities", path: "/mdolatowska/Curiosities" },
+    { id: 3, name: "inspirations", path: "/mdolatowska/Inspirations" },
+    { id: 4, name: "life drawings", path: "/mdolatowska/LifeDrawings" }
   ];
   const navLinks = links.map(link => (
     <NavLink
