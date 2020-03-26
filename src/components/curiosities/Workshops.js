@@ -4,7 +4,7 @@ import BackToCuriositiesBtn from "./BackToCuriositiesBtn";
 const Workshops = () => {
   return (
     <>
-      <div className="mainSection">Workshops</div>
+      <section className="mainSection">Workshops</section>
       <BackToCuriositiesBtn />
     </>
   );

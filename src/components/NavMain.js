@@ -5,9 +5,9 @@ import "../styles/NavMain.sass";
 const NavMain = () => {
   const links = [
     { id: 1, name: "home", path: "/mdolatowska" },
-    { id: 2, name: "curiosities", path: "/mdolatowska/Curiosities" },
-    { id: 3, name: "inspirations", path: "/mdolatowska/Inspirations" },
-    { id: 4, name: "life drawings", path: "/mdolatowska/LifeDrawings" }
+    { id: 2, name: "curiosities", path: "/mdolatowska/curiosities" },
+    { id: 3, name: "inspirations", path: "/mdolatowska/inspirations" },
+    { id: 4, name: "life drawings", path: "/mdolatowska/life-drawings" }
   ];
   const navLinks = links.map(link => (
     <NavLink
@@ -20,7 +20,7 @@ const NavMain = () => {
       {link.name}
     </NavLink>
   ));
-  return <nav className="nav">{navLinks}</nav>;
+  return <nav className="navMain">{navLinks}</nav>;
 };
 
 export default NavMain;

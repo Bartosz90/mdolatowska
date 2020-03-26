@@ -1,15 +1,15 @@
 import React from "react";
-import { Switch, Route, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "../../styles/Curiosities.sass";
 
 const BackToCuriositiesBtn = () => {
   return (
     <NavLink
       exact
-      to="/mdolatowska/Curiosities/"
+      to="/mdolatowska/curiosities/"
       className="backToCuriositiesBtn"
     >
-      <i class="fas fa-arrow-left"></i> back
+      <i className="fas fa-arrow-left"></i> back
     </NavLink>
   );
 };

@@ -1,10 +1,15 @@
 @import "../index.sass"
 
-.nav 
+.navMain 
     position: fixed 
     top: 0
     left: 0
     z-index: 1
+    transform: translateY(-100px)
+    animation: navMainAppear 1s linear forwards 2s
+    @keyframes navMainAppear 
+        100% 
+            transform: none
     .navBtn
         position: relative
         top: 10px

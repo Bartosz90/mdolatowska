@@ -23,35 +23,35 @@ function App() {
       <Switch>
         <Redirect exact from="/" to="/mdolatowska" />
         <Route exact path="/mdolatowska" component={Home} />
-        <Route exact path="/mdolatowska/Curiosities" component={Curiosities} />
+        <Route exact path="/mdolatowska/curiosities" component={Curiosities} />
         <Route
           exact
-          path="/mdolatowska/Inspirations"
+          path="/mdolatowska/inspirations"
           component={Inspirations}
         />
         <Route
           exact
-          path="/mdolatowska/LifeDrawings"
+          path="/mdolatowska/life-drawings"
           component={LifeDrawings}
         />
         <Route
           exact
-          path="/mdolatowska/Curiosities/workshops"
+          path="/mdolatowska/curiosities/workshops"
           component={Workshops}
         />
         <Route
           exact
-          path="/mdolatowska/Curiosities/exploration"
+          path="/mdolatowska/curiosities/exploration"
           component={Exploration}
         />
         <Route
           exact
-          path="/mdolatowska/Curiosities/comics-dummy"
+          path="/mdolatowska/curiosities/comics-dummy"
           component={ComicsDummy}
         />
         <Route
           exact
-          path="/mdolatowska/Curiosities/comics-illustration"
+          path="/mdolatowska/curiosities/comics-illustration"
           component={ComicsIllustration}
         />
       </Switch>

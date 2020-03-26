@@ -1,0 +1,22 @@
+@import "../index.sass"
+
+.mainSection.homeSection 
+    justify-content: flex-start
+    perspective: 400px 
+    transform-style: preserve-3d
+    h1, h2 
+        width: 51%
+        text-align: center
+    h1 
+        font-size: 70px
+        opacity: 0
+        animation: letterAppear .5s linear forwards 
+    h2 
+        margin-top: 20px
+        font-size: 35px
+        .letter 
+            opacity: 0
+            animation: letterAppear .5s linear forwards
+            @keyframes letterAppear 
+                100% 
+                    opacity: 1
