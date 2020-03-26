@@ -1,8 +1,8 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import "../styles/Nav.sass";
+import "../styles/NavMain.sass";
 
-const Nav = () => {
+const NavMain = () => {
   const links = [
     { id: 1, name: "home", path: "/mdolatowska" },
     { id: 2, name: "curiosities", path: "/mdolatowska/Curiosities" },
@@ -23,4 +23,4 @@ const Nav = () => {
   return <nav className="nav">{navLinks}</nav>;
 };
 
-export default Nav;
+export default NavMain;

@@ -1,3 +1,7 @@
+//colors 
+$white: #fff
+$black: #000
+    
 * 
     margin: 0
     padding: 0
@@ -5,7 +9,7 @@
 body 
     font-family: 'Roboto', sans-serif
     color: #fff 
-    background-color: #000
+    background-color: $black
 =flexCenter()
     display: flex 
     justify-content: center 
@@ -16,12 +20,12 @@ body
     width: 100vw
     min-height: 100vh
     +flexCenter()
-    background-color: #000 
+    background-color: $black 
     opacity: 0
     animation: appear 1s forwards
     h1 
         width: 100% 
-        font-size: 40px
+        font-size: 30px
         text-align: center
 @keyframes appear 
     100% 
