@@ -18,7 +18,7 @@ const Home = () => {
   });
   return (
     <section className="mainSection homeSection">
-      <h1>Magdalen Dolatowska</h1>
+      <h1>Magdalena Dolatowska</h1>
       <h2>{letters}</h2>
     </section>
   );

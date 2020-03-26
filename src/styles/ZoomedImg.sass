@@ -1,0 +1,49 @@
+@import "../index.sass"
+
+.zoomedImgContainer 
+    position: fixed 
+    width: 100vw 
+    height: 100vh 
+    top: 0
+    left: 0
+    z-index: 30000
+    background-color: rgba(0,0,0,.9)
+    +flexCenter()
+    transition: .3s
+    transform-origin: center center
+    transform: scale(0)
+    animation: zoomIn .3s linear forwards 
+    @keyframes zoomIn
+        100% 
+            transform: none
+    .zoomedImg 
+        height: 90%
+    .zoomedImg.changingImg
+        animation: disappear .4s linear forwards
+        @keyframes disappear 
+            33% 
+                opacity: 0
+            65% 
+                opacity: 0
+            100% 
+                opacity: 1
+    .changeImg, .closeZoom
+        position: absolute
+        cursor: pointer
+        background-color: transparent
+        color: $white 
+        font-size: 40px
+        border: none
+    .changeImg 
+        top: 50% 
+        transform: translateY(-50%)
+    .nextImg 
+        right: 20px
+    .prevImg 
+        left: 20px
+    .closeZoom 
+        top: 10px 
+        right: 20px
+.zoomedImgContainer.closingImg
+    opacity: 0
+    
