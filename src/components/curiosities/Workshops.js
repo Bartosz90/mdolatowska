@@ -18,13 +18,13 @@ const Workshops = () => {
     setZoomedImgIndex(e.target.dataset.id);
   };
   const changeImg = e => {
-    let currentEvent = e;
+    e.persist();
     setChagingImg(true);
     setTimeout(() => {
       setChagingImg(false);
     }, 400);
     setTimeout(() => {
-      if (currentEvent === "next") {
+      if (e.target.dataset.action === "next") {
         if (Number(zoomedImgIndex) === images.length - 1) {
           setZoomedImgIndex(0);
         } else setZoomedImgIndex(Number(zoomedImgIndex) + 1);
