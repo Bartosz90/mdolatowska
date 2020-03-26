@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/mdolatowska/static/css/main.40f9a857.chunk.css",
-    "main.js": "/mdolatowska/static/js/main.3578eb22.chunk.js",
-    "main.js.map": "/mdolatowska/static/js/main.3578eb22.chunk.js.map",
+    "main.js": "/mdolatowska/static/js/main.17796703.chunk.js",
+    "main.js.map": "/mdolatowska/static/js/main.17796703.chunk.js.map",
     "runtime-main.js": "/mdolatowska/static/js/runtime-main.9a036c38.js",
     "runtime-main.js.map": "/mdolatowska/static/js/runtime-main.9a036c38.js.map",
     "static/js/2.371a9cde.chunk.js": "/mdolatowska/static/js/2.371a9cde.chunk.js",
     "static/js/2.371a9cde.chunk.js.map": "/mdolatowska/static/js/2.371a9cde.chunk.js.map",
     "index.html": "/mdolatowska/index.html",
-    "precache-manifest.e64b9b475bba75ca42ac718f98277ea1.js": "/mdolatowska/precache-manifest.e64b9b475bba75ca42ac718f98277ea1.js",
+    "precache-manifest.07196eb3a53b9054feeeadd70c9b3296.js": "/mdolatowska/precache-manifest.07196eb3a53b9054feeeadd70c9b3296.js",
     "service-worker.js": "/mdolatowska/service-worker.js",
     "static/css/main.40f9a857.chunk.css.map": "/mdolatowska/static/css/main.40f9a857.chunk.css.map",
     "static/js/2.371a9cde.chunk.js.LICENSE.txt": "/mdolatowska/static/js/2.371a9cde.chunk.js.LICENSE.txt",
@@ -26,6 +26,6 @@
     "static/js/runtime-main.9a036c38.js",
     "static/js/2.371a9cde.chunk.js",
     "static/css/main.40f9a857.chunk.css",
-    "static/js/main.3578eb22.chunk.js"
+    "static/js/main.17796703.chunk.js"
   ]
 }
