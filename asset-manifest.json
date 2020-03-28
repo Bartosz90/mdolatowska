@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/mdolatowska/static/css/main.2e00e8ce.chunk.css",
-    "main.js": "/mdolatowska/static/js/main.80c5c38c.chunk.js",
-    "main.js.map": "/mdolatowska/static/js/main.80c5c38c.chunk.js.map",
+    "main.css": "/mdolatowska/static/css/main.3800de91.chunk.css",
+    "main.js": "/mdolatowska/static/js/main.0409b7db.chunk.js",
+    "main.js.map": "/mdolatowska/static/js/main.0409b7db.chunk.js.map",
     "runtime-main.js": "/mdolatowska/static/js/runtime-main.9a036c38.js",
     "runtime-main.js.map": "/mdolatowska/static/js/runtime-main.9a036c38.js.map",
     "static/js/2.eed70d16.chunk.js": "/mdolatowska/static/js/2.eed70d16.chunk.js",
     "static/js/2.eed70d16.chunk.js.map": "/mdolatowska/static/js/2.eed70d16.chunk.js.map",
     "index.html": "/mdolatowska/index.html",
-    "precache-manifest.4f4935af33261f3f37e0d214806e756a.js": "/mdolatowska/precache-manifest.4f4935af33261f3f37e0d214806e756a.js",
+    "precache-manifest.5a1ebe8b78b000c32dae88e8b3bba301.js": "/mdolatowska/precache-manifest.5a1ebe8b78b000c32dae88e8b3bba301.js",
     "service-worker.js": "/mdolatowska/service-worker.js",
-    "static/css/main.2e00e8ce.chunk.css.map": "/mdolatowska/static/css/main.2e00e8ce.chunk.css.map",
+    "static/css/main.3800de91.chunk.css.map": "/mdolatowska/static/css/main.3800de91.chunk.css.map",
     "static/js/2.eed70d16.chunk.js.LICENSE.txt": "/mdolatowska/static/js/2.eed70d16.chunk.js.LICENSE.txt",
     "static/media/w1.jpg": "/mdolatowska/static/media/w1.5c28073a.jpg",
     "static/media/w2.jpg": "/mdolatowska/static/media/w2.c1293fac.jpg",
@@ -25,7 +25,7 @@
   "entrypoints": [
     "static/js/runtime-main.9a036c38.js",
     "static/js/2.eed70d16.chunk.js",
-    "static/css/main.2e00e8ce.chunk.css",
-    "static/js/main.80c5c38c.chunk.js"
+    "static/css/main.3800de91.chunk.css",
+    "static/js/main.0409b7db.chunk.js"
   ]
 }
