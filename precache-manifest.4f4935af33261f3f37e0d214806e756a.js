@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "fe0ba7da58eb8d17a913fcaeef489f32",
+    "revision": "8afbdb8c40b0574f3ab2006f8392269b",
     "url": "/mdolatowska/index.html"
   },
   {
-    "revision": "009e6b6c57b13c726742",
-    "url": "/mdolatowska/static/css/main.40f9a857.chunk.css"
+    "revision": "e232ab5d0edf65f66f0f",
+    "url": "/mdolatowska/static/css/main.2e00e8ce.chunk.css"
   },
   {
-    "revision": "ee7874a803c87ab8f198",
-    "url": "/mdolatowska/static/js/2.371a9cde.chunk.js"
+    "revision": "5c18bb4703bef9f3e148",
+    "url": "/mdolatowska/static/js/2.eed70d16.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/mdolatowska/static/js/2.371a9cde.chunk.js.LICENSE.txt"
+    "url": "/mdolatowska/static/js/2.eed70d16.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "009e6b6c57b13c726742",
-    "url": "/mdolatowska/static/js/main.17796703.chunk.js"
+    "revision": "e232ab5d0edf65f66f0f",
+    "url": "/mdolatowska/static/js/main.80c5c38c.chunk.js"
   },
   {
     "revision": "5ebd716aedcd4d15d335",
