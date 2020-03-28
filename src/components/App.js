@@ -1,4 +1,4 @@
-import React from "react";
+import React, { createContext, useState } from "react";
 import {
   BrowserRouter as Router,
   Switch,
@@ -16,47 +16,70 @@ import Exploration from "./curiosities/Exploration";
 import ComicsDummy from "./curiosities/ComicsDummy";
 import ComicsIllustration from "./curiosities/ComicsIllustration";
 
-function App() {
+export const StateContext = createContext();
+
+const App = () => {
+  const [state, setState] = useState({
+    zoomed: false,
+    zoomedImgIndex: 0,
+    changingImg: false,
+    closingImg: false
+  });
+  const zoomTheImage = e => {
+    e.persist();
+    console.log("working");
+    setState(state => ({ ...state, zoomed: !state.zoomed }));
+    setState(state => ({
+      ...state,
+      zoomedImgIndex: Number(e.target.dataset.id)
+    }));
+  };
   return (
     <Router>
-      <NavMain />
-      <Switch>
-        <Redirect exact from="/" to="/mdolatowska" />
-        <Route exact path="/mdolatowska" component={Home} />
-        <Route exact path="/mdolatowska/curiosities" component={Curiosities} />
-        <Route
-          exact
-          path="/mdolatowska/inspirations"
-          component={Inspirations}
-        />
-        <Route
-          exact
-          path="/mdolatowska/life-drawings"
-          component={LifeDrawings}
-        />
-        <Route
-          exact
-          path="/mdolatowska/curiosities/workshops"
-          component={Workshops}
-        />
-        <Route
-          exact
-          path="/mdolatowska/curiosities/exploration"
-          component={Exploration}
-        />
-        <Route
-          exact
-          path="/mdolatowska/curiosities/comics-dummy"
-          component={ComicsDummy}
-        />
-        <Route
-          exact
-          path="/mdolatowska/curiosities/comics-illustration"
-          component={ComicsIllustration}
-        />
-      </Switch>
+      <StateContext.Provider value={[state, setState, zoomTheImage]}>
+        <NavMain />
+        <Switch>
+          <Redirect exact from="/" to="/mdolatowska" />
+          <Route exact path="/mdolatowska" component={Home} />
+          <Route
+            exact
+            path="/mdolatowska/curiosities"
+            component={Curiosities}
+          />
+          <Route
+            exact
+            path="/mdolatowska/inspirations"
+            component={Inspirations}
+          />
+          <Route
+            exact
+            path="/mdolatowska/life-drawings"
+            component={LifeDrawings}
+          />
+          <Route
+            exact
+            path="/mdolatowska/curiosities/workshops"
+            component={Workshops}
+          />
+          <Route
+            exact
+            path="/mdolatowska/curiosities/exploration"
+            component={Exploration}
+          />
+          <Route
+            exact
+            path="/mdolatowska/curiosities/comics-dummy"
+            component={ComicsDummy}
+          />
+          <Route
+            exact
+            path="/mdolatowska/curiosities/comics-illustration"
+            component={ComicsIllustration}
+          />
+        </Switch>
+      </StateContext.Provider>
     </Router>
   );
-}
+};
 
 export default App;

@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import React, { useEffect, useContext } from "react";
 import BackToCuriositiesBtn from "./BackToCuriositiesBtn";
 import ZoomedImg from "../ZoomedImg";
+import { StateContext } from "../App";
 import "../../styles/Curiosities.sass";
 import w1 from "../../img/workshops/w1.jpg";
 import w2 from "../../img/workshops/w2.jpg";
@@ -13,35 +14,12 @@ import w8 from "../../img/workshops/w8.jpg";
 import w9 from "../../img/workshops/w9.jpg";
 
 const Workshops = () => {
-  const zoomTheImage = e => {
-    setZoomed(!zoomed);
-    setZoomedImgIndex(e.target.dataset.id);
-  };
-  const changeImg = e => {
-    e.persist();
-    setChagingImg(true);
-    setTimeout(() => {
-      setChagingImg(false);
-    }, 400);
-    setTimeout(() => {
-      if (e.target.dataset.action === "next") {
-        if (Number(zoomedImgIndex) === images.length - 1) {
-          setZoomedImgIndex(0);
-        } else setZoomedImgIndex(Number(zoomedImgIndex) + 1);
-      } else {
-        if (Number(zoomedImgIndex) === 0) {
-          setZoomedImgIndex(images.length - 1);
-        } else setZoomedImgIndex(Number(zoomedImgIndex) - 1);
-      }
-    }, 200);
-  };
-  const closeImg = () => {
-    setClosingImg(true);
-    setTimeout(() => {
-      setZoomed(false);
-      setClosingImg(false);
-    }, 400);
-  };
+  const [state, setState, zoomTheImage] = useContext(StateContext);
+
+  useEffect(() => {
+    setState(state => ({ ...state, zoomedImgIndex: 0, zoomed: false }));
+  }, []);
+
   const images = [
     { id: 0, src: w1 },
     { id: 1, src: w2 },
@@ -53,10 +31,6 @@ const Workshops = () => {
     { id: 7, src: w8 },
     { id: 8, src: w9 }
   ];
-  const [zoomed, setZoomed] = useState(false);
-  const [zoomedImgIndex, setZoomedImgIndex] = useState(0);
-  const [changingImg, setChagingImg] = useState(false);
-  const [closingImg, setClosingImg] = useState(false);
 
   const img = images.map((img, i) => (
     <div className="img" data-id={i} key={i}>
@@ -66,13 +40,10 @@ const Workshops = () => {
 
   return (
     <>
-      {zoomed && (
+      {state.zoomed && (
         <ZoomedImg
-          src={images[zoomedImgIndex].src}
-          changeImg={changeImg}
-          closeImg={closeImg}
-          changingImg={changingImg}
-          closingImg={closingImg}
+          src={images[state.zoomedImgIndex].src}
+          imagesArray={images}
         />
       )}
       <section className="mainSection workshopsSection">{img}</section>
