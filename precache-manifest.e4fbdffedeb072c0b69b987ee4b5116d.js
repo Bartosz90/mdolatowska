@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e59d499247f5845c22cf7f9e85078417",
+    "revision": "cdc3e5f76af635d6f466c10cf19e7fab",
     "url": "/mdolatowska/index.html"
   },
   {
-    "revision": "c2a09098b2bdfd48b449",
-    "url": "/mdolatowska/static/css/main.f3daf4ee.chunk.css"
+    "revision": "3bece79afc18f23d1855",
+    "url": "/mdolatowska/static/css/main.bc5f6952.chunk.css"
   },
   {
     "revision": "5c18bb4703bef9f3e148",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/mdolatowska/static/js/2.eed70d16.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "c2a09098b2bdfd48b449",
-    "url": "/mdolatowska/static/js/main.db98b558.chunk.js"
+    "revision": "3bece79afc18f23d1855",
+    "url": "/mdolatowska/static/js/main.c022a456.chunk.js"
   },
   {
     "revision": "5ebd716aedcd4d15d335",
