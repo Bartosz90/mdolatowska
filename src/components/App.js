@@ -15,7 +15,6 @@ import Workshops from "./curiosities/Workshops";
 import Exploration from "./curiosities/Exploration";
 import ComicsDummy from "./curiosities/ComicsDummy";
 import ComicsIllustration from "./curiosities/ComicsIllustration";
-import Preloader from "./Preloader";
 
 export const StateContext = createContext();
 
@@ -30,7 +29,6 @@ const App = () => {
 
   const zoomTheImage = e => {
     e.persist();
-    console.log("working");
     setState(state => ({ ...state, zoomed: !state.zoomed }));
     setState(state => ({
       ...state,
@@ -47,7 +45,6 @@ const App = () => {
       <StateContext.Provider
         value={[state, setState, zoomTheImage, handleImagesLoading]}
       >
-        {!state.imagesLoaded && <Preloader />}
         <NavMain />
         <Switch>
           <Redirect exact from="/" to="/mdolatowska" />

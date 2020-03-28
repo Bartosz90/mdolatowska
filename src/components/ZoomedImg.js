@@ -48,9 +48,6 @@ const ZoomedImg = props => {
           ? "zoomedImgContainer closingImg"
           : "zoomedImgContainer"
       }
-      onClick={() => {
-        console.log(state.lol);
-      }}
     >
       <img
         src={props.src}

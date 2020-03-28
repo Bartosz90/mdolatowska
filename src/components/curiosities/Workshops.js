@@ -12,6 +12,7 @@ import w6 from "../../img/workshops/w6.jpg";
 import w7 from "../../img/workshops/w7.jpg";
 import w8 from "../../img/workshops/w8.jpg";
 import w9 from "../../img/workshops/w9.jpg";
+import Preloader from "../Preloader";
 
 const Workshops = () => {
   const [state, setState, zoomTheImage, handleImagesLoading] = useContext(
@@ -22,13 +23,13 @@ const Workshops = () => {
     setState(state => ({
       ...state,
       zoomedImgIndex: 0,
-      zoomed: false,
-      imagesLoaded: false
+      zoomed: false
     }));
-    setTimeout(() => {
-      setState(state => ({ ...state, imagesLoaded: true }));
-    }, 2000);
-  }, []);
+    window.onLoad = handleImagesLoading();
+    return () => {
+      setState(state => ({ ...state, imagesLoaded: false }));
+    };
+  }, [setState]);
 
   const images = [
     { id: 0, src: w1 },
@@ -50,6 +51,7 @@ const Workshops = () => {
 
   return (
     <>
+      {!state.imagesLoaded && <Preloader />}
       {state.zoomed && (
         <ZoomedImg
           src={images[state.zoomedImgIndex].src}
