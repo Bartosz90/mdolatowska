@@ -10,7 +10,7 @@ const ZoomedImg = props => {
     setState(state => ({ ...state, changingImg: true }));
     setTimeout(() => {
       setState(state => ({ ...state, changingImg: false }));
-    }, 400);
+    }, 300);
     setTimeout(() => {
       if (e.target.dataset.action === "next") {
         if (Number(state.zoomedImgIndex) === props.imagesArray.length - 1) {
@@ -32,7 +32,7 @@ const ZoomedImg = props => {
             zoomedImgIndex: state.zoomedImgIndex - 1
           }));
       }
-    }, 200);
+    }, 150);
   };
   const closeImg = () => {
     setState(state => ({ ...state, closingImg: true }));

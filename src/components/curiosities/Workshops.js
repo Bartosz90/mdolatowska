@@ -25,6 +25,9 @@ const Workshops = () => {
       zoomed: false,
       imagesLoaded: false
     }));
+    setTimeout(() => {
+      setState(state => ({ ...state, imagesLoaded: true }));
+    }, 2000);
   }, []);
 
   const images = [
@@ -41,14 +44,7 @@ const Workshops = () => {
 
   const img = images.map((img, i) => (
     <div className="img" data-id={i} key={i}>
-      <img
-        key={i}
-        src={img.src}
-        alt=""
-        onClick={zoomTheImage}
-        data-id={i}
-        onLoad={handleImagesLoading}
-      />
+      <img key={i} src={img.src} alt="" onClick={zoomTheImage} data-id={i} />
     </div>
   ));
 
