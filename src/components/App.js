@@ -24,6 +24,7 @@ const App = () => {
     zoomedImgIndex: 0,
     changingImg: false,
     closingImg: false,
+    imagesCounter: 0,
     imagesLoaded: false
   });
 
@@ -36,9 +37,18 @@ const App = () => {
     }));
   };
 
+  const handleImagesLoading = imagesArray => {
+    setState(state => ({ ...state, imagesCounter: state.imagesCounter + 1 }));
+    if (state.imagesCounter >= imagesArray.length - 1) {
+      setState(state => ({ ...state, imagesLoaded: true }));
+    }
+  };
+
   return (
     <Router>
-      <StateContext.Provider value={[state, setState, zoomTheImage]}>
+      <StateContext.Provider
+        value={[state, setState, zoomTheImage, handleImagesLoading]}
+      >
         <NavMain />
         <Switch>
           <Redirect exact from="/" to="/mdolatowska" />

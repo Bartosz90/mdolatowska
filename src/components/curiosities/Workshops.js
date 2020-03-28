@@ -15,7 +15,9 @@ import w9 from "../../img/workshops/w9.jpg";
 import Preloader from "../Preloader";
 
 const Workshops = () => {
-  const [state, setState, zoomTheImage] = useContext(StateContext);
+  const [state, setState, zoomTheImage, handleImagesLoading] = useContext(
+    StateContext
+  );
 
   useEffect(() => {
     setState(state => ({
@@ -25,8 +27,7 @@ const Workshops = () => {
     }));
 
     return () => {
-      imagesLoadedCount = 0;
-      setState(state => ({ ...state, imagesLoaded: false }));
+      setState(state => ({ ...state, imagesLoaded: false, imagesCounter: 0 }));
     };
   }, [setState]);
 
@@ -42,16 +43,12 @@ const Workshops = () => {
     { id: 8, src: w9 }
   ];
 
-  let imagesLoadedCount = 0;
-
   const img = images.map((img, i) => (
     <div className="img" data-id={i} key={i}>
       <img
         key={i}
         onLoad={() => {
-          imagesLoadedCount += 1;
-          if (imagesLoadedCount >= images.length)
-            setState(state => ({ ...state, imagesLoaded: true }));
+          handleImagesLoading(images);
         }}
         src={img.src}
         alt=""
