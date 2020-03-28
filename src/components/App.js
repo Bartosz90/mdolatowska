@@ -36,15 +36,9 @@ const App = () => {
     }));
   };
 
-  const handleImagesLoading = () => {
-    setState(state => ({ ...state, imagesLoaded: true }));
-  };
-
   return (
     <Router>
-      <StateContext.Provider
-        value={[state, setState, zoomTheImage, handleImagesLoading]}
-      >
+      <StateContext.Provider value={[state, setState, zoomTheImage]}>
         <NavMain />
         <Switch>
           <Redirect exact from="/" to="/mdolatowska" />
