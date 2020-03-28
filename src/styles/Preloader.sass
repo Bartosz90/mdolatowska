@@ -1,0 +1,52 @@
+@import "../index.sass"
+
+.preloader
+    position: fixed
+    width: 100vw
+    height: 100vh
+    +flexCenter()
+    background-color: rgba(0,0,0,.9)
+    z-index: 400000 
+.square 
+  width: 50px 
+  height: 50px 
+  transform: translate(-50%,-50%)
+  animation: moveCircle 4s linear infinite
+  @keyframes moveCircle
+    100% 
+      transform: translate(-50%,-50%) rotate(360deg)
+  .circle 
+    position: absolute 
+    background-color: #fff
+    width: 16px 
+    height: 16px
+    border-radius: 50%
+    
+  .circle1 
+    left: 0
+    top: 0
+    animation: move 1s linear infinite
+    @keyframes move 
+      50% 
+        transform: translate(10px,10px) scale(.6)
+  .circle2
+    right: 0
+    top: 0
+    animation: move2 1s linear infinite
+    @keyframes move2 
+      50% 
+        transform: translate(-10px,10px) scale(.6)
+  .circle3
+    left: 0
+    bottom: 0
+    animation: move3 1s linear infinite
+    @keyframes move3 
+      50% 
+        transform: translate(10px,-10px) scale(.6)
+  .circle4 
+    right: 0
+    bottom: 0
+    animation: move4 1s linear infinite
+    @keyframes move4 
+      50% 
+        transform: translate(-10px,-10px) scale(.6)

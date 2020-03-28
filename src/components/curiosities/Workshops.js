@@ -14,10 +14,17 @@ import w8 from "../../img/workshops/w8.jpg";
 import w9 from "../../img/workshops/w9.jpg";
 
 const Workshops = () => {
-  const [state, setState, zoomTheImage] = useContext(StateContext);
+  const [state, setState, zoomTheImage, handleImagesLoading] = useContext(
+    StateContext
+  );
 
   useEffect(() => {
-    setState(state => ({ ...state, zoomedImgIndex: 0, zoomed: false }));
+    setState(state => ({
+      ...state,
+      zoomedImgIndex: 0,
+      zoomed: false,
+      imagesLoaded: false
+    }));
   }, []);
 
   const images = [
@@ -34,7 +41,14 @@ const Workshops = () => {
 
   const img = images.map((img, i) => (
     <div className="img" data-id={i} key={i}>
-      <img key={i} src={img.src} alt="" onClick={zoomTheImage} data-id={i} />
+      <img
+        key={i}
+        src={img.src}
+        alt=""
+        onClick={zoomTheImage}
+        data-id={i}
+        onLoad={handleImagesLoading}
+      />
     </div>
   ));
 

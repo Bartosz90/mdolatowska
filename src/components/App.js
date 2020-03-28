@@ -15,6 +15,7 @@ import Workshops from "./curiosities/Workshops";
 import Exploration from "./curiosities/Exploration";
 import ComicsDummy from "./curiosities/ComicsDummy";
 import ComicsIllustration from "./curiosities/ComicsIllustration";
+import Preloader from "./Preloader";
 
 export const StateContext = createContext();
 
@@ -23,8 +24,10 @@ const App = () => {
     zoomed: false,
     zoomedImgIndex: 0,
     changingImg: false,
-    closingImg: false
+    closingImg: false,
+    imagesLoaded: true
   });
+
   const zoomTheImage = e => {
     e.persist();
     console.log("working");
@@ -34,9 +37,17 @@ const App = () => {
       zoomedImgIndex: Number(e.target.dataset.id)
     }));
   };
+
+  const handleImagesLoading = () => {
+    setState(state => ({ ...state, imagesLoaded: true }));
+  };
+
   return (
     <Router>
-      <StateContext.Provider value={[state, setState, zoomTheImage]}>
+      <StateContext.Provider
+        value={[state, setState, zoomTheImage, handleImagesLoading]}
+      >
+        {!state.imagesLoaded && <Preloader />}
         <NavMain />
         <Switch>
           <Redirect exact from="/" to="/mdolatowska" />
