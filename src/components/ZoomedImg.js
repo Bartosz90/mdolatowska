@@ -54,6 +54,7 @@ const ZoomedImg = props => {
         alt=""
         className={state.changingImg ? "zoomedImg changingImg" : "zoomedImg"}
       />
+      <p className="description">{props.description}</p>
       <button
         className="changeImg nextImg"
         onClick={changeImg}
