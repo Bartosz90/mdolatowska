@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "abbaefa0dbbbe571d54dc8ae23d0d17c",
+    "revision": "17c07bd04568d5b157a953815ebb6548",
     "url": "/mdolatowska/index.html"
   },
   {
-    "revision": "f8f7f93053895c13f729",
+    "revision": "c5ccfed3b8b4809dbdbe",
     "url": "/mdolatowska/static/css/main.b88e72b1.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/mdolatowska/static/js/2.e5458172.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "f8f7f93053895c13f729",
-    "url": "/mdolatowska/static/js/main.d02631f4.chunk.js"
+    "revision": "c5ccfed3b8b4809dbdbe",
+    "url": "/mdolatowska/static/js/main.9764c866.chunk.js"
   },
   {
     "revision": "5ebd716aedcd4d15d335",
@@ -80,8 +80,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/mdolatowska/static/media/w3.41881944.jpg"
   },
   {
-    "revision": "9a04ca355e9fc556f5aef1dcf49d41a9",
-    "url": "/mdolatowska/static/media/w4.9a04ca35.jpg"
+    "revision": "e17019160af078b73fc602a6e343467d",
+    "url": "/mdolatowska/static/media/w4.e1701916.jpg"
   },
   {
     "revision": "1df316a944807ec515a8f390c863a569",
