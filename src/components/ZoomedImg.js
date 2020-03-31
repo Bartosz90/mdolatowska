@@ -53,6 +53,10 @@ const ZoomedImg = props => {
         src={props.src}
         alt=""
         className={state.changingImg ? "zoomedImg changingImg" : "zoomedImg"}
+        onClick={() => {
+          const win = window.open(props.src, "_blank");
+          win.focus();
+        }}
       />
       <p className="description">{props.description}</p>
       <button

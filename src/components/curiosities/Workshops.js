@@ -171,7 +171,7 @@ const Workshops = () => {
   ];
 
   const img = images.map((img, i) => (
-    <div className="img" data-id={i} key={i}>
+    <div className={`img img${i}`} data-id={i} key={i}>
       <img
         key={i}
         onLoad={() => {
