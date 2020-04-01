@@ -182,7 +182,9 @@ const Workshops = () => {
         />
       )}
       <section className="mainSection workshopsSection">
-        <h3>workshops</h3>
+        <h3>
+          curiosities <i className="fas fa-arrow-right"></i> workshops
+        </h3>
         <div className="workshopsImgContainer">{img}</div>
       </section>
       <BackToCuriositiesBtn />

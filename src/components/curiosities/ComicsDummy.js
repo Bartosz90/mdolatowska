@@ -168,7 +168,9 @@ const ComicsDummy = () => {
         />
       )}
       <section className="mainSection comicsDummy">
-        <h3>comics - dummy</h3>
+        <h3>
+          curiosities <i className="fas fa-arrow-right"></i> comics - dummy
+        </h3>
         <div className="comicsDummyImgContainer">{img}</div>
       </section>
       <BackToCuriositiesBtn />

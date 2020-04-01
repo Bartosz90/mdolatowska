@@ -2,22 +2,20 @@ import React, { useContext } from "react";
 import BackToCuriositiesBtn from "./BackToCuriositiesBtn";
 import ZoomedImg from "../ZoomedImg";
 import { StateContext } from "../App";
-import w1 from "../../img/workshops/w1.jpg";
-import w2 from "../../img/workshops/w2.jpg";
-import w3 from "../../img/workshops/w3.jpg";
-import w4 from "../../img/workshops/w4.jpg";
-import w5 from "../../img/workshops/w5.jpg";
-import w6 from "../../img/workshops/w6.jpg";
-import w7 from "../../img/workshops/w7.jpg";
-import w8 from "../../img/workshops/w8.jpg";
-import w9 from "../../img/workshops/w9.jpg";
-import w10 from "../../img/workshops/w10.jpg";
-import w11 from "../../img/workshops/w11.jpg";
-import w12 from "../../img/workshops/w12.jpg";
-import w13 from "../../img/workshops/w13.jpg";
-import w14 from "../../img/workshops/w14.jpg";
-import w15 from "../../img/workshops/w15.jpg";
-import w16 from "../../img/workshops/w16.jpg";
+import w1 from "../../img/exploration/w1.jpg";
+import w2 from "../../img/exploration/w2.jpg";
+import w3 from "../../img/exploration/w3.jpg";
+import w4 from "../../img/exploration/w4.jpg";
+import w5 from "../../img/exploration/w5.jpg";
+import w6 from "../../img/exploration/w6.jpg";
+import w7 from "../../img/exploration/w7.jpg";
+import w8 from "../../img/exploration/w8.jpg";
+import w9 from "../../img/exploration/w9.jpg";
+import w10 from "../../img/exploration/w10.jpg";
+import w11 from "../../img/exploration/w11.jpg";
+import w12 from "../../img/exploration/w12.jpg";
+import w13 from "../../img/exploration/w13.jpg";
+import w14 from "../../img/exploration/w14.jpg";
 
 const Exploration = () => {
   const [state] = useContext(StateContext);
@@ -105,24 +103,14 @@ const Exploration = () => {
       src: w14,
       description:
         "Example description of artwork number 9. Elelele, elele, lololo, hehe."
-    },
-    {
-      id: 14,
-      src: w15,
-      description:
-        "Example description of artwork number 9. Elelele, elele, lololo, hehe."
-    },
-    {
-      id: 15,
-      src: w16,
-      description:
-        "Example description of artwork number 9. Elelele, elele, lololo, hehe."
     }
   ];
   return (
     <>
       <section className="mainSection explorationSection">
-        <h3>exploration</h3>
+        <h3>
+          curiosities <i className="fas fa-arrow-right"></i> exploration
+        </h3>
         <ZoomedImg
           src={images[state.zoomedImgIndex].src}
           imagesArray={images}

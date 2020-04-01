@@ -126,7 +126,10 @@ const ComicsIllustration = () => {
         />
       )}
       <section className="mainSection comicsIllustrationSection">
-        <h3>comics - illustration</h3>
+        <h3>
+          curiosities <i className="fas fa-arrow-right"></i> comics -
+          illustration
+        </h3>
         {img}
       </section>
       <BackToCuriositiesBtn />
