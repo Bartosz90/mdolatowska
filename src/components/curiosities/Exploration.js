@@ -20,9 +20,7 @@ import w15 from "../../img/workshops/w15.jpg";
 import w16 from "../../img/workshops/w16.jpg";
 
 const Exploration = () => {
-  const [state, setState, zoomTheImage, handleImagesLoading] = useContext(
-    StateContext
-  );
+  const [state] = useContext(StateContext);
   const images = [
     {
       id: 0,
