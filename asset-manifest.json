@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/mdolatowska/static/css/main.65e5f403.chunk.css",
-    "main.js": "/mdolatowska/static/js/main.dfab770f.chunk.js",
-    "main.js.map": "/mdolatowska/static/js/main.dfab770f.chunk.js.map",
+    "main.css": "/mdolatowska/static/css/main.0baf6b56.chunk.css",
+    "main.js": "/mdolatowska/static/js/main.9b762c3e.chunk.js",
+    "main.js.map": "/mdolatowska/static/js/main.9b762c3e.chunk.js.map",
     "runtime-main.js": "/mdolatowska/static/js/runtime-main.9a036c38.js",
     "runtime-main.js.map": "/mdolatowska/static/js/runtime-main.9a036c38.js.map",
-    "static/js/2.d42bad9c.chunk.js": "/mdolatowska/static/js/2.d42bad9c.chunk.js",
-    "static/js/2.d42bad9c.chunk.js.map": "/mdolatowska/static/js/2.d42bad9c.chunk.js.map",
+    "static/js/2.0f00781c.chunk.js": "/mdolatowska/static/js/2.0f00781c.chunk.js",
+    "static/js/2.0f00781c.chunk.js.map": "/mdolatowska/static/js/2.0f00781c.chunk.js.map",
     "index.html": "/mdolatowska/index.html",
-    "precache-manifest.1c2717943ecc06b750e8b3abc0ab6481.js": "/mdolatowska/precache-manifest.1c2717943ecc06b750e8b3abc0ab6481.js",
+    "precache-manifest.04be2b2522f470003ae5bba7e71d358e.js": "/mdolatowska/precache-manifest.04be2b2522f470003ae5bba7e71d358e.js",
     "service-worker.js": "/mdolatowska/service-worker.js",
-    "static/css/main.65e5f403.chunk.css.map": "/mdolatowska/static/css/main.65e5f403.chunk.css.map",
-    "static/js/2.d42bad9c.chunk.js.LICENSE.txt": "/mdolatowska/static/js/2.d42bad9c.chunk.js.LICENSE.txt",
+    "static/css/main.0baf6b56.chunk.css.map": "/mdolatowska/static/css/main.0baf6b56.chunk.css.map",
+    "static/js/2.0f00781c.chunk.js.LICENSE.txt": "/mdolatowska/static/js/2.0f00781c.chunk.js.LICENSE.txt",
     "static/media/w1.jpg": "/mdolatowska/static/media/w1.df2ef721.jpg",
-    "static/media/w10.jpg": "/mdolatowska/static/media/w10.711be668.jpg",
+    "static/media/w10.jpg": "/mdolatowska/static/media/w10.9688a4d2.jpg",
     "static/media/w11.jpg": "/mdolatowska/static/media/w11.f5e84819.jpg",
     "static/media/w12.jpg": "/mdolatowska/static/media/w12.c3cc14ad.jpg",
     "static/media/w13.jpg": "/mdolatowska/static/media/w13.5ac8199d.jpg",
@@ -23,9 +23,9 @@
     "static/media/w17.jpg": "/mdolatowska/static/media/w17.f3aa32c9.jpg",
     "static/media/w18.jpg": "/mdolatowska/static/media/w18.7d771d3e.jpg",
     "static/media/w2.jpg": "/mdolatowska/static/media/w2.d9d518d1.jpg",
-    "static/media/w3.jpg": "/mdolatowska/static/media/w3.7dd6477b.jpg",
+    "static/media/w3.jpg": "/mdolatowska/static/media/w3.ca8b3c17.jpg",
     "static/media/w4.jpg": "/mdolatowska/static/media/w4.f355695b.jpg",
-    "static/media/w5.jpg": "/mdolatowska/static/media/w5.ed3b82ab.jpg",
+    "static/media/w5.jpg": "/mdolatowska/static/media/w5.f856977b.jpg",
     "static/media/w6.jpg": "/mdolatowska/static/media/w6.dd3231bf.jpg",
     "static/media/w7.jpg": "/mdolatowska/static/media/w7.bfdb7f8b.jpg",
     "static/media/w8.jpg": "/mdolatowska/static/media/w8.f2feb8ed.jpg",
@@ -33,8 +33,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.9a036c38.js",
-    "static/js/2.d42bad9c.chunk.js",
-    "static/css/main.65e5f403.chunk.css",
-    "static/js/main.dfab770f.chunk.js"
+    "static/js/2.0f00781c.chunk.js",
+    "static/css/main.0baf6b56.chunk.css",
+    "static/js/main.9b762c3e.chunk.js"
   ]
 }
