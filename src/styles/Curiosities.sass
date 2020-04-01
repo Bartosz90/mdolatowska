@@ -58,7 +58,6 @@
     .img 
         height: 100px
         transition: .5s
-        cursor: pointer
         img 
             height: 100%
 
@@ -68,4 +67,33 @@
     height: 100vh
     align-items: flex-end
     align-content: stretch
+
+// COMICS-DUMMY SECTION 
+
+.mainSection.comicsDummy 
+    height: 100vh
+    .comicsDummyImgContainer 
+        width: 60%
+        height: 60%
+        +flexCenter()
+        justify-content: space-around
+        .img 
+            width: 23%
+            height: 17%
+            margin: 20px 0
+            +flexCenter()
+            img 
+                height: 100%
+      
+
+// COMICS-ILLUSTRATION SECTION
+
+.mainSection.comicsIllustrationSection
+    position: relative
+    .img 
+        height: 100px
+        transition: .5s
+        cursor: pointer
+        img 
+            height: 100%
  
