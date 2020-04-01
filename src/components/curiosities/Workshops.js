@@ -21,8 +21,6 @@ import w15 from "../../img/workshops/w15.jpg";
 import w16 from "../../img/workshops/w16.jpg";
 import w17 from "../../img/workshops/w17.jpg";
 import w18 from "../../img/workshops/w18.jpg";
-import w19 from "../../img/workshops/w19.jpg";
-import w20 from "../../img/workshops/w20.jpg";
 import Preloader from "../Preloader";
 
 const Workshops = () => {
@@ -155,18 +153,6 @@ const Workshops = () => {
       src: w18,
       description:
         "Example description of artwork number 9. Elelele, elele, lololo, hehe."
-    },
-    {
-      id: 18,
-      src: w19,
-      description:
-        "Example description of artwork number 9. Elelele, elele, lololo, hehe."
-    },
-    {
-      id: 19,
-      src: w20,
-      description:
-        "Example description of artwork number 9. Elelele, elele, lololo, hehe."
     }
   ];
 
@@ -197,7 +183,7 @@ const Workshops = () => {
       )}
       <section className="mainSection workshopsSection">
         <h3>workshops</h3>
-        {img}
+        <div className="workshopsImgContainer">{img}</div>
       </section>
       <BackToCuriositiesBtn />
     </>
