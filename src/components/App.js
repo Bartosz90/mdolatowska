@@ -3,7 +3,7 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Redirect
+  Redirect,
 } from "react-router-dom";
 import "../styles/App.sass";
 import NavMain from "./NavMain";
@@ -22,25 +22,26 @@ const App = () => {
   const [state, setState] = useState({
     zoomed: false,
     zoomedImgIndex: 0,
+    descriptionActive: false,
     changingImg: false,
     closingImg: false,
     imagesCounter: 0,
-    imagesLoaded: false
+    imagesLoaded: false,
   });
 
-  const zoomTheImage = e => {
+  const zoomTheImage = (e) => {
     e.persist();
-    setState(state => ({ ...state, zoomed: !state.zoomed }));
-    setState(state => ({
+    setState((state) => ({ ...state, zoomed: !state.zoomed }));
+    setState((state) => ({
       ...state,
-      zoomedImgIndex: Number(e.target.dataset.id)
+      zoomedImgIndex: Number(e.target.dataset.id),
     }));
   };
 
-  const handleImagesLoading = imagesArray => {
-    setState(state => ({ ...state, imagesCounter: state.imagesCounter + 1 }));
+  const handleImagesLoading = (imagesArray) => {
+    setState((state) => ({ ...state, imagesCounter: state.imagesCounter + 1 }));
     if (state.imagesCounter >= imagesArray.length - 1) {
-      setState(state => ({ ...state, imagesLoaded: true }));
+      setState((state) => ({ ...state, imagesLoaded: true }));
     }
   };
 
