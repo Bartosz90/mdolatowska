@@ -8,30 +8,34 @@ const Curiosities = () => {
       id: 1,
       name: "workshops",
       path: "/mdolatowska/curiosities/workshops",
-      description: "something about workshops",
+      description:
+        "something about workshops something about workshops something about workshops something about workshops",
     },
     {
       id: 2,
       name: "exploration",
       path: "/mdolatowska/curiosities/exploration",
-      description: "something about exploration",
+      description:
+        "something about exploration something about exploration something about exploration something about exploration",
     },
     {
       id: 3,
       name: "comics-dummy",
       path: "/mdolatowska/curiosities/comics-dummy",
-      description: "something about comics-dummy",
+      description:
+        "something about comics-dummy something about comics-dummy something about comics-dummy something about comics-dummy",
     },
     {
       id: 4,
       name: "comics-illustration",
       path: "/mdolatowska/curiosities/comics-illustration",
-      description: "something about comics-illustration",
+      description:
+        "something about comics-illustration something about comics-illustration something about comics-illustration something about comics-illustration",
     },
   ];
   const curiositiesNavLinks = curiositiesNav.map((link) => (
     <NavLink key={link.id} exact to={link.path} className="curiositiesNavBtn">
-      {link.name}
+      <h1>{link.name}</h1>
       <p className="description">{link.description}</p>
     </NavLink>
   ));
