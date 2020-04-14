@@ -81,7 +81,7 @@ const App = () => {
           />
           <Route
             exact
-            path="/mdolatowska/curiosities/comics-dummy"
+            path="/mdolatowska/curiosities/comics-storyboard"
             component={ComicsDummy}
           />
           <Route

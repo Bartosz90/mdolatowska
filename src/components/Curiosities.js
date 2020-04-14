@@ -20,8 +20,8 @@ const Curiosities = () => {
     },
     {
       id: 3,
-      name: "comics-dummy",
-      path: "/mdolatowska/curiosities/comics-dummy",
+      name: "comics-storyboard",
+      path: "/mdolatowska/curiosities/comics-storyboard",
       description:
         "something about comics-dummy something about comics-dummy something about comics-dummy something about comics-dummy",
     },
