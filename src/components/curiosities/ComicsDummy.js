@@ -18,6 +18,10 @@ import w12 from "../../img/comicsdummy/w12.jpg";
 import w13 from "../../img/comicsdummy/w13.jpg";
 import w14 from "../../img/comicsdummy/w14.jpg";
 import w15 from "../../img/comicsdummy/w15.jpg";
+import w16 from "../../img/comicsdummy/w16.jpg";
+import w17 from "../../img/comicsdummy/w17.jpg";
+import w18 from "../../img/comicsdummy/w18.jpg";
+import w19 from "../../img/comicsdummy/w19.jpg";
 
 import Preloader from "../Preloader";
 
@@ -131,6 +135,30 @@ const ComicsDummy = () => {
     {
       id: 14,
       src: w15,
+      description:
+        "Example description of artwork number 9. Elelele, elele, lololo, hehe.",
+    },
+    {
+      id: 15,
+      src: w16,
+      description:
+        "Example description of artwork number 9. Elelele, elele, lololo, hehe.",
+    },
+    {
+      id: 16,
+      src: w17,
+      description:
+        "Example description of artwork number 9. Elelele, elele, lololo, hehe.",
+    },
+    {
+      id: 17,
+      src: w18,
+      description:
+        "Example description of artwork number 9. Elelele, elele, lololo, hehe.",
+    },
+    {
+      id: 18,
+      src: w19,
       description:
         "Example description of artwork number 9. Elelele, elele, lololo, hehe.",
     },
