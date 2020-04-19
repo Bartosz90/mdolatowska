@@ -44,86 +44,73 @@ const Exploration = () => {
     {
       id: 0,
       src: w1,
-      description:
-        "Example description of artwork number 1. Elelele, elele, lololo, hehe.",
+      description: "Mind map",
     },
     {
       id: 1,
       src: w2,
-      description:
-        "Example description of artwork number 2. Elelele, elele, lololo, hehe.",
+      description: "Introduction to 'curiosities'",
     },
     {
       id: 2,
       src: w3,
-      description:
-        "Example description of artwork number 3. Elelele, elele, lololo, hehe.",
+      description: "Introducing emotional intelligence",
     },
     {
       id: 3,
       src: w4,
-      description:
-        "Example description of artwork number 4. Elelele, elele, lololo, hehe.",
+      description: "Anger - collage - newspapers + acrylics",
     },
     {
       id: 4,
       src: w5,
-      description:
-        "Example description of artwork number 5. Elelele, elele, lololo, hehe.",
+      description: "Sadnes - collage - newspapers + acrylics + marker",
     },
     {
       id: 5,
       src: w6,
-      description:
-        "Example description of artwork number 6. Elelele, elele, lololo, hehe.",
+      description: "'Utopia' illustration - first attempt; watercolours",
     },
     {
       id: 6,
       src: w7,
-      description:
-        "Example description of artwork number 7. Elelele, elele, lololo, hehe.",
+      description: "Second attempt - fineliner",
     },
     {
       id: 7,
       src: w8,
       description:
-        "Example description of artwork number 8. Elelele, elele, lololo, hehe.",
+        "Poem divided into a series of small illustrations - pen; part 1",
     },
     {
       id: 8,
       src: w9,
-      description:
-        "Example description of artwork number 9. Elelele, elele, lololo, hehe.",
+      description: "Part 2",
     },
     {
       id: 9,
       src: w10,
-      description:
-        "Example description of artwork number 9. Elelele, elele, lololo, hehe.",
+      description: "'Island where all becomes clear'; trying out pastels",
     },
     {
       id: 10,
       src: w11,
-      description:
-        "Example description of artwork number 9. Elelele, elele, lololo, hehe.",
+      description: "Not finished drawing of 'Utopia'",
     },
     {
       id: 11,
       src: w12,
-      description:
-        "Example description of artwork number 9. Elelele, elele, lololo, hehe.",
+      description: "Comic book - moodboard",
     },
     {
       id: 12,
       src: w13,
-      description:
-        "Example description of artwork number 9. Elelele, elele, lololo, hehe.",
+      description: "",
     },
     {
       id: 13,
       src: w14,
-      description:
-        "Example description of artwork number 9. Elelele, elele, lololo, hehe.",
+      description: "",
     },
   ];
   const img = images.map((img, i) => (
@@ -152,7 +139,7 @@ const Exploration = () => {
       )}
       <section className="mainSection explorationSection">
         <h3>
-          curiosities <i className="fas fa-arrow-right"></i> exploration
+          curiosities <i className="fas fa-arrow-right"></i> exploration phase
         </h3>
         <div className="ExplorationImgContainer">{img}</div>
       </section>

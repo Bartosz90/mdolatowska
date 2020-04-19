@@ -29,18 +29,18 @@ const Workshops = () => {
   );
 
   useEffect(() => {
-    setState(state => ({
+    setState((state) => ({
       ...state,
       zoomedImgIndex: 0,
-      zoomed: false
+      zoomed: false,
     }));
 
     return () => {
-      setState(state => ({
+      setState((state) => ({
         ...state,
         imagesLoaded: false,
         imagesCounter: 0,
-        zoomedImgIndex: 0
+        zoomedImgIndex: 0,
       }));
     };
   }, [setState]);
@@ -50,110 +50,95 @@ const Workshops = () => {
       id: 0,
       src: w1,
       description:
-        "Example description of artwork number 1. Elelele, elele, lololo, hehe."
+        "Drawing into print with Meg Buick; monoprint inspired by 'Utopia' by Szymborska",
     },
     {
       id: 1,
       src: w2,
-      description:
-        "Example description of artwork number 2. Elelele, elele, lololo, hehe."
+      description: "Drawing into print with Meg Buick; ghost print",
     },
     {
       id: 2,
       src: w3,
-      description:
-        "Example description of artwork number 3. Elelele, elele, lololo, hehe."
+      description: "Drawing into print with Meg Buick; ghost print + pastels",
     },
     {
       id: 3,
       src: w4,
-      description:
-        "Example description of artwork number 4. Elelele, elele, lololo, hehe."
+      description: "Drawing into print with Meg Buick; monoprint",
     },
     {
       id: 4,
       src: w5,
-      description:
-        "Example description of artwork number 5. Elelele, elele, lololo, hehe."
+      description: "Drawing into print with Meg Buick; monoprint + pastels",
     },
     {
       id: 5,
       src: w6,
-      description:
-        "Example description of artwork number 6. Elelele, elele, lololo, hehe."
+      description: "Drawing into print with Meg Buick; monoprint + pastels",
     },
     {
       id: 6,
       src: w7,
-      description:
-        "Example description of artwork number 7. Elelele, elele, lololo, hehe."
+      description: "Workshop with Katherine Jones - unsuccessful collagraph",
     },
     {
       id: 7,
       src: w8,
-      description:
-        "Example description of artwork number 8. Elelele, elele, lololo, hehe."
+      description: "Workshop with Katherine Jones",
     },
     {
       id: 8,
       src: w9,
-      description:
-        "Example description of artwork number 9. Elelele, elele, lololo, hehe."
+      description: "Workshop with Mark Calazet - sense of space",
     },
     {
       id: 9,
       src: w10,
-      description:
-        "Example description of artwork number 9. Elelele, elele, lololo, hehe."
+      description: "Workshop with Mark Calazet - colours of Bristol",
     },
     {
       id: 10,
       src: w11,
       description:
-        "Example description of artwork number 9. Elelele, elele, lololo, hehe."
+        "Workshop with Mark Calazet - identifying seemengly white colours",
     },
     {
       id: 11,
       src: w12,
       description:
-        "Example description of artwork number 9. Elelele, elele, lololo, hehe."
+        "Workshop with Mark Calazet - combination of my favourite colours",
     },
     {
       id: 12,
       src: w13,
-      description:
-        "Example description of artwork number 9. Elelele, elele, lololo, hehe."
+      description: "Screen printing workshop",
     },
     {
       id: 13,
       src: w14,
-      description:
-        "Example description of artwork number 9. Elelele, elele, lololo, hehe."
+      description: "Lithography workshop",
     },
     {
       id: 14,
       src: w15,
-      description:
-        "Example description of artwork number 9. Elelele, elele, lololo, hehe."
+      description: "Lithography workshop - white paper",
     },
     {
       id: 15,
       src: w16,
-      description:
-        "Example description of artwork number 9. Elelele, elele, lololo, hehe."
+      description: "Etching workshop",
     },
     {
       id: 16,
       src: w17,
-      description:
-        "Example description of artwork number 9. Elelele, elele, lololo, hehe."
+      description: "Etching workshop - less ink",
     },
     {
       id: 17,
       src: w18,
-      description:
-        "Example description of artwork number 9. Elelele, elele, lololo, hehe."
-    }
+      description: "Laser cutting workshop",
+    },
   ];
 
   const img = images.map((img, i) => (

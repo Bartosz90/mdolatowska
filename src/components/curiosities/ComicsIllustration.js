@@ -57,151 +57,141 @@ const ComicsIllustration = () => {
       id: 0,
       src: w1,
       description:
-        "Example description of artwork number 1. Elelele, elele, lololo, hehe.",
+        "Scanned drawinngs + graphic tablet + photoshop - final illustration page 1",
     },
     {
       id: 1,
       src: w2,
-      description:
-        "Example description of artwork number 2. Elelele, elele, lololo, hehe.",
+      description: "Ink - final illustration page 2",
     },
     {
       id: 2,
       src: w3,
-      description:
-        "Example description of artwork number 3. Elelele, elele, lololo, hehe.",
+      description: "Pencil drawing",
     },
     {
       id: 3,
       src: w4,
       description:
-        "Example description of artwork number 4. Elelele, elele, lololo, hehe.",
+        "Scanned ink drawing on tracing paper + photoshop - final illustration page 14 (I'm not satisfied with it, but I won't have time to redo it)",
     },
     {
       id: 4,
       src: w5,
-      description:
-        "Example description of artwork number 5. Elelele, elele, lololo, hehe.",
+      description: "Monoprinting at home 1",
     },
     {
       id: 5,
       src: w6,
-      description:
-        "Example description of artwork number 6. Elelele, elele, lololo, hehe.",
+      description: "Monoprinting at home 2",
     },
     {
       id: 6,
       src: w7,
       description:
-        "Example description of artwork number 7. Elelele, elele, lololo, hehe.",
+        "Stencil for monoprinting + black background - I really like the simplicity of this combination",
     },
     {
       id: 7,
       src: w8,
-      description:
-        "Example description of artwork number 8. Elelele, elele, lololo, hehe.",
+      description: "Stencil before being removed from a print",
     },
     {
       id: 8,
       src: w9,
       description:
-        "Example description of artwork number 9. Elelele, elele, lololo, hehe.",
+        "Paint that remained on stencil created a very interesting piece",
     },
     {
       id: 9,
       src: w10,
-      description:
-        "Example description of artwork number 9. Elelele, elele, lololo, hehe.",
+      description: "The same piece on black background",
     },
     {
       id: 10,
       src: w11,
       description:
-        "Example description of artwork number 9. Elelele, elele, lololo, hehe.",
+        "Another unintentionally created piece - I love these colours",
     },
     {
       id: 11,
       src: w12,
-      description:
-        "Example description of artwork number 9. Elelele, elele, lololo, hehe.",
+      description: "A monoprint on a painted yellow paper",
     },
     {
       id: 12,
       src: w13,
       description:
-        "Example description of artwork number 9. Elelele, elele, lololo, hehe.",
+        "Here I wanted to add a layer of black lines, but because I don't have a roller I think there was too much paint on the plate and it covered the whole print with black. I tried to rework it with acrylics.",
     },
     {
       id: 13,
       src: w14,
       description:
-        "Example description of artwork number 9. Elelele, elele, lololo, hehe.",
+        "Another print, I'm very happy with the compositions and colours here",
     },
     {
       id: 14,
       src: w15,
       description:
-        "Example description of artwork number 9. Elelele, elele, lololo, hehe.",
+        "Here I edited it in photoshop adding a scanned drawing and an outline of a woman",
     },
     {
       id: 15,
       src: w16,
       description:
-        "Example description of artwork number 9. Elelele, elele, lololo, hehe.",
+        "This piece is a final outcome for page 6 - monoprint + acrylics; I'm very happy with this piece",
     },
     {
       id: 16,
       src: w17,
       description:
-        "Example description of artwork number 9. Elelele, elele, lololo, hehe.",
+        "Another monoprint - I'm again happy with colour and composition here",
     },
     {
       id: 17,
       src: w18,
-      description:
-        "Example description of artwork number 9. Elelele, elele, lololo, hehe.",
+      description: "Monoprint + acrylics + neswpaper ",
     },
     {
       id: 18,
       src: w19,
       description:
-        "Example description of artwork number 9. Elelele, elele, lololo, hehe.",
+        "'Ideas stuck in my head' - a drawing for page 5; I scanned this drawing and printed 5 copies on somerset watercolour paper in order to finish it with different techniques.",
     },
     {
       id: 19,
       src: w20,
       description:
-        "Example description of artwork number 9. Elelele, elele, lololo, hehe.",
+        "First I tried to fill it with tones in Photoshop, however I found it difficult and I gave up. I think that tonal drawings are my weakness and I would like to work on it in the future.",
     },
     {
       id: 20,
       src: w21,
       description:
-        "Example description of artwork number 9. Elelele, elele, lololo, hehe.",
+        "Here I wanted to crate a black and white piece using fineliners and think markers, but I gave up too. It was a very time-consuming method and the result was't worth it.",
     },
     {
       id: 21,
       src: w22,
       description:
-        "Example description of artwork number 9. Elelele, elele, lololo, hehe.",
+        "This is a version that I am quite happy with. I recommend zooming in. - Acrylics A3",
     },
     {
       id: 22,
       src: w23,
       description:
-        "Example description of artwork number 9. Elelele, elele, lololo, hehe.",
+        "Scanned drawing of the monster (pastels) + photoshop part 1",
     },
     {
       id: 23,
       src: w24,
-      description:
-        "Example description of artwork number 9. Elelele, elele, lololo, hehe.",
+      description: "A final piece for page 10",
     },
     {
       id: 24,
       src: w25,
-      description:
-        "Example description of artwork number 9. Elelele, elele, lololo, hehe.",
+      description: "A drawing that I am not going to use; coloured pencils.",
     },
   ];
 

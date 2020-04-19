@@ -27,18 +27,18 @@ const LifeDrawings = () => {
   );
 
   useEffect(() => {
-    setState(state => ({
+    setState((state) => ({
       ...state,
       zoomedImgIndex: 0,
-      zoomed: false
+      zoomed: false,
     }));
 
     return () => {
-      setState(state => ({
+      setState((state) => ({
         ...state,
         imagesLoaded: false,
         imagesCounter: 0,
-        zoomedImgIndex: 0
+        zoomedImgIndex: 0,
       }));
     };
   }, [setState]);
@@ -47,105 +47,88 @@ const LifeDrawings = () => {
     {
       id: 0,
       src: w1,
-      description:
-        "Example description of artwork number 1. Elelele, elele, lololo, hehe."
+      description: "",
     },
     {
       id: 1,
       src: w2,
-      description:
-        "Example description of artwork number 2. Elelele, elele, lololo, hehe."
+      description: "",
     },
     {
       id: 2,
       src: w3,
-      description:
-        "Example description of artwork number 3. Elelele, elele, lololo, hehe."
+      description: "",
     },
     {
       id: 3,
       src: w4,
-      description:
-        "Example description of artwork number 4. Elelele, elele, lololo, hehe."
+      description: ".",
     },
     {
       id: 4,
       src: w5,
-      description:
-        "Example description of artwork number 5. Elelele, elele, lololo, hehe."
+      description: "",
     },
     {
       id: 5,
       src: w6,
-      description:
-        "Example description of artwork number 6. Elelele, elele, lololo, hehe."
+      description: "",
     },
     {
       id: 6,
       src: w7,
-      description:
-        "Example description of artwork number 7. Elelele, elele, lololo, hehe."
+      description: "",
     },
     {
       id: 7,
       src: w8,
-      description:
-        "Example description of artwork number 8. Elelele, elele, lololo, hehe."
+      description: ".",
     },
     {
       id: 8,
       src: w9,
-      description:
-        "Example description of artwork number 9. Elelele, elele, lololo, hehe."
+      description: "",
     },
     {
       id: 9,
       src: w10,
-      description:
-        "Example description of artwork number 9. Elelele, elele, lololo, hehe."
+      description: "",
     },
     {
       id: 10,
       src: w11,
-      description:
-        "Example description of artwork number 9. Elelele, elele, lololo, hehe."
+      description: "",
     },
     {
       id: 11,
       src: w12,
-      description:
-        "Example description of artwork number 9. Elelele, elele, lololo, hehe."
+      description: "",
     },
     {
       id: 12,
       src: w13,
-      description:
-        "Example description of artwork number 9. Elelele, elele, lololo, hehe."
+      description: "",
     },
     {
       id: 13,
       src: w14,
-      description:
-        "Example description of artwork number 9. Elelele, elele, lololo, hehe."
+      description: "",
     },
     {
       id: 14,
       src: w15,
-      description:
-        "Example description of artwork number 9. Elelele, elele, lololo, hehe."
+      description: "",
     },
     {
       id: 15,
       src: w16,
-      description:
-        "Example description of artwork number 9. Elelele, elele, lololo, hehe."
+      description: "",
     },
     {
       id: 16,
       src: w17,
-      description:
-        "Example description of artwork number 9. Elelele, elele, lololo, hehe."
-    }
+      description: "",
+    },
   ];
 
   const img = images.map((img, i) => (

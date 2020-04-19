@@ -13,7 +13,7 @@ const Curiosities = () => {
     },
     {
       id: 2,
-      name: "exploration",
+      name: "exploration phase",
       path: "/mdolatowska/curiosities/exploration",
       description:
         "something about exploration something about exploration something about exploration something about exploration",
@@ -27,10 +27,9 @@ const Curiosities = () => {
     },
     {
       id: 4,
-      name: "comics-illustration",
+      name: "illustrations",
       path: "/mdolatowska/curiosities/comics-illustration",
-      description:
-        "something about comics-illustration something about comics-illustration something about comics-illustration something about comics-illustration",
+      description: "process + finished illustrations",
     },
   ];
   const curiositiesNavLinks = curiositiesNav.map((link) => (
