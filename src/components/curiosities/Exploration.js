@@ -114,7 +114,7 @@ const Exploration = () => {
     },
   ];
   const img = images.map((img, i) => (
-    <div className={`img img${i}`} data-id={i} key={i}>
+    <div className={`img img${i}`} data-id={i} key={i} onClick={zoomTheImage}>
       <img
         key={i}
         onLoad={() => {
@@ -122,7 +122,6 @@ const Exploration = () => {
         }}
         src={img.src}
         alt=""
-        onClick={zoomTheImage}
         data-id={i}
       />
     </div>

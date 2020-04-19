@@ -62,7 +62,7 @@ const LifeDrawings = () => {
     {
       id: 3,
       src: w4,
-      description: ".",
+      description: "",
     },
     {
       id: 4,
@@ -82,7 +82,7 @@ const LifeDrawings = () => {
     {
       id: 7,
       src: w8,
-      description: ".",
+      description: "",
     },
     {
       id: 8,
@@ -132,7 +132,7 @@ const LifeDrawings = () => {
   ];
 
   const img = images.map((img, i) => (
-    <div className={`img img${i}`} data-id={i} key={i}>
+    <div className={`img img${i}`} data-id={i} key={i} onClick={zoomTheImage}>
       <img
         key={i}
         onLoad={() => {
@@ -140,7 +140,6 @@ const LifeDrawings = () => {
         }}
         src={img.src}
         alt=""
-        onClick={zoomTheImage}
         data-id={i}
       />
     </div>

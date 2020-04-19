@@ -7,9 +7,9 @@ const NavMain = () => {
     { id: 1, name: "home", path: "/mdolatowska" },
     { id: 2, name: "curiosities", path: "/mdolatowska/curiosities" },
     { id: 3, name: "inspirations", path: "/mdolatowska/inspirations" },
-    { id: 4, name: "life drawings", path: "/mdolatowska/life-drawings" }
+    { id: 4, name: "life drawings", path: "/mdolatowska/life-drawings" },
   ];
-  const navLinks = links.map(link => (
+  const navLinks = links.map((link) => (
     <NavLink
       key={link.id}
       exact
