@@ -13,6 +13,8 @@
         justify-content: space-around
         margin-top: 30px
         z-index: 1
+        @media (orientation: portrait)
+            width: 90%
         .curiositiesNavBtn 
             position: relative
             width: 47%
@@ -24,6 +26,10 @@
             transition: .5s
             background-color: #000
             overflow: hidden
+            @media (orientation: portrait)
+                width: 100%
+                height: 20%
+                margin: 5px 0
             h1 
                 position: absolute
                 top: 50%
@@ -31,6 +37,9 @@
                 transform: translateY(-50%)
                 transition: .5s
                 color: $white
+                @media (orientation: portrait)
+                    height: auto
+                    font-size: 25px
             .description 
                 position: absolute 
                 bottom: 0 
@@ -43,6 +52,8 @@
                 font-size: 20px
                 transform: translateY(100%)
                 transition: .5s
+                @media (orientation: portrait)
+                    display: none
         .curiositiesNavBtn:nth-child(4):hover 
             background-color: $white 
             h1 
@@ -73,6 +84,8 @@
     animation: backToCuriositiesBtnMove 2s linear infinite
     .fa-arrow-left
         margin-right: 5px
+    @media (orientation: portrait)
+        bottom: 10px
 .backToCuriositiesBtn:hover 
     background-color: $white 
     color: $black
@@ -89,17 +102,26 @@
 
 .mainSection.workshopsSection
     height: 100vh
+    @media (orientation: portrait)
+        height: auto
+        min-height: 100vh
+        padding-top: 160px
     .workshopsImgContainer 
         width: 70%
         height: 60%
         +flexCenter()
         justify-content: space-around
+        @media (orientation: portrait)
+            width: 90%
         .img 
             width: 15%
             height: 20%
             margin: 20px 0
             +flexCenter()
             border: 1px solid white
+            @media (orientation: portrait)
+                width: 47%
+                height: 100px
             img 
                 height: 100%
 
@@ -109,17 +131,26 @@
 
 .mainSection.explorationSection
     height: 100vh
+    @media (orientation: portrait)
+        height: auto
+        min-height: 100vh
+        padding-top: 160px
     .ExplorationImgContainer 
         width: 60%
         height: 60%
         +flexCenter()
         justify-content: space-around
+        @media (orientation: portrait)
+            width: 90%
         .img 
             width: 19%
             height: 17%
             margin: 20px 0
             +flexCenter()
             border: 1px solid white
+            @media (orientation: portrait)
+                width: 47%
+                height: 100px
             img 
                 height: 100%
 
@@ -127,21 +158,33 @@
 
 .mainSection.comicsDummy
     height: 100vh
+    @media (orientation: portrait)
+        height: auto
+        min-height: 100vh
+        padding-top: 160px
     .comicsDummyImgContainer 
         width: 70%
         height: 60%
         +flexCenter()
         justify-content: space-around
+        @media (orientation: portrait)
+            width: 90%
         .img 
             width: 18%
             height: 17%
             margin: 20px 0
             +flexCenter()
             border: 1px solid white
+            @media (orientation: portrait)
+                width: 47%
+                height: 100px
             img 
                 height: 100%
         .img:nth-child(1), .img:nth-child(2), .img:nth-child(3), .img:nth-child(4)
             width: 23%
+            @media (orientation: portrait)
+                width: 47%
+                height: 100px
       
 
 // COMICS-ILLUSTRATION SECTION
@@ -149,17 +192,26 @@
 .mainSection.comicsIllustrationSection
     height: 100vh
     position: relative
+    @media (orientation: portrait)
+        height: auto
+        min-height: 100vh
+        padding-top: 160px
     .comicsIllustrationImgContainer
         +flexCenter()
         width: 90%
         height: 60%
         justify-content: space-around
+        @media (orientation: portrait)
+            width: 90%
         .img 
             height: 20%
             width: 17%
             margin: 10px 0
             +flexCenter()
             border: 1px solid white
+            @media (orientation: portrait)
+                width: 47%
+                height: 100px
             img 
                 height: 100%
  

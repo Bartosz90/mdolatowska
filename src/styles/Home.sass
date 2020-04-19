@@ -4,6 +4,8 @@
     display: block
     padding-bottom: 70px
     overflow: hidden
+    @media (orientation: portrait)
+        padding-bottom: 20px
     h1, h2 
         width: 51%
         text-align: center
@@ -12,6 +14,10 @@
         font-size: 70px
         opacity: 0
         animation: letterAppear .5s linear forwards 
+        @media (orientation: portrait)
+            width: 100%
+            margin-top: 40%
+            font-size: 40px
     h2 
         margin-top: 20px
         font-size: 35px
@@ -22,16 +28,27 @@
             @keyframes letterAppear 
                 100% 
                     opacity: 1
+        @media (orientation: portrait)
+            width: 100%
+            padding: 0 40px
+            margin-bottom: 20px
+            font-size: 30px
     h3 
         position: static
         opacity: 0
         font-size: 30px
         animation: textAppear 1s linear forwards 2s
+        @media (orientation: portrait)
+            padding: 10px
+            font-size: 25px
     p 
         padding: 70px 70px 0 70px
         font-size: 24px
         opacity: 0
         animation: textAppear 1s linear forwards 2s
+        @media (orientation: portrait)
+            padding: 10px 10px 0 10px
+            font-size: 20px
 @keyframes textAppear 
     100% 
         opacity: 1

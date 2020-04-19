@@ -2,16 +2,25 @@
 
 .mainSection.lifeDrawingsSection
     height: 100vh
+    @media (orientation: portrait)
+        height: auto
+        min-height: 100vh
+        padding-top: 160px
     .workshopsImgContainer 
         width: 60%
         height: 60%
         +flexCenter()
         justify-content: space-around
+        @media (orientation: portrait)
+            width: 90%
         .img 
             width: 15%
             height: 20%
             margin: 20px 0
             +flexCenter()
             border: 1px solid white
+            @media (orientation: portrait)
+                width: 47%
+                height: 100px
             img 
                 height: 100%

@@ -27,6 +27,7 @@ const App = () => {
     closingImg: false,
     imagesCounter: 0,
     imagesLoaded: false,
+    menuActive: false,
   });
 
   const zoomTheImage = (e) => {

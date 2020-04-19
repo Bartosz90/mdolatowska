@@ -7,7 +7,7 @@
     height: 100vh 
     top: 0
     left: 0
-    z-index: 30000
+    z-index: 30000000
     background-color: rgba(0,0,0,.9)
     +flexCenter()
     transition: .3s
@@ -22,9 +22,14 @@
         +flexCenter()
         position: relative
         overflow: hidden
+        @media (orientation: portrait)
+            height: 60%
         .zoomedImg 
             height: 100%
             cursor: zoom-in
+            @media (orientation: portrait)
+                height: auto 
+                width: 95%
         .fullDescription
             position: absolute
             top: 0 
@@ -46,13 +51,16 @@
             color: white
             cursor: pointer
             visibility: hidden
-
+            display: none
     .description 
         width: 100%
         padding: 10px 10%
         padding-top: 18px
         text-align: center 
         font-size: 18px
+        @media (orientation: portrait)
+            font-size: 15px
+            padding: 0
     .zoomedImg.changingImg
         animation: disappear .3s linear forwards
         @keyframes disappear 
@@ -74,8 +82,12 @@
         transform: translateY(-50%)
     .nextImg 
         right: 100px
+        @media (orientation: portrait)
+            right: 10px
     .prevImg 
         left: 100px
+        @media (orientation: portrait)
+            left: 10px
     .closeZoom 
         top: 10px 
         right: 20px
