@@ -53,41 +53,25 @@ const App = () => {
       >
         <NavMain />
         <Switch>
-          <Redirect exact from="/" to="/mdolatowska" />
-          <Route exact path="/mdolatowska" component={Home} />
+          {/* <Redirect exact from="/" to="/mdolatowska" /> */}
+          <Route exact path="/" component={Home} />
+          <Route exact path="/curiosities" component={Curiosities} />
+          <Route exact path="/inspirations" component={Inspirations} />
+          <Route exact path="/life-drawings" component={LifeDrawings} />
+          <Route exact path="/curiosities/workshops" component={Workshops} />
           <Route
             exact
-            path="/mdolatowska/curiosities"
-            component={Curiosities}
-          />
-          <Route
-            exact
-            path="/mdolatowska/inspirations"
-            component={Inspirations}
-          />
-          <Route
-            exact
-            path="/mdolatowska/life-drawings"
-            component={LifeDrawings}
-          />
-          <Route
-            exact
-            path="/mdolatowska/curiosities/workshops"
-            component={Workshops}
-          />
-          <Route
-            exact
-            path="/mdolatowska/curiosities/exploration"
+            path="/curiosities/exploration"
             component={Exploration}
           />
           <Route
             exact
-            path="/mdolatowska/curiosities/comics-storyboard"
+            path="/curiosities/comics-storyboard"
             component={ComicsDummy}
           />
           <Route
             exact
-            path="/mdolatowska/curiosities/comics-illustration"
+            path="/curiosities/comics-illustration"
             component={ComicsIllustration}
           />
         </Switch>

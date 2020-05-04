@@ -6,10 +6,10 @@ import "../styles/NavMain.sass";
 const NavMain = () => {
   const [state, setState] = useContext(StateContext);
   const links = [
-    { id: 1, name: "home", path: "/mdolatowska" },
-    { id: 2, name: "curiosities", path: "/mdolatowska/curiosities" },
-    { id: 3, name: "inspirations", path: "/mdolatowska/inspirations" },
-    { id: 4, name: "life drawings", path: "/mdolatowska/life-drawings" },
+    { id: 1, name: "home", path: "/" },
+    { id: 2, name: "curiosities", path: "/curiosities" },
+    { id: 3, name: "inspirations", path: "/inspirations" },
+    { id: 4, name: "life drawings", path: "/life-drawings" },
   ];
   const navLinks = links.map((link) => (
     <NavLink

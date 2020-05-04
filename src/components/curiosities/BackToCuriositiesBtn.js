@@ -4,11 +4,7 @@ import "../../styles/Curiosities.sass";
 
 const BackToCuriositiesBtn = () => {
   return (
-    <NavLink
-      exact
-      to="/mdolatowska/curiosities/"
-      className="backToCuriositiesBtn"
-    >
+    <NavLink exact to="/curiosities/" className="backToCuriositiesBtn">
       <i className="fas fa-arrow-left"></i> back
     </NavLink>
   );

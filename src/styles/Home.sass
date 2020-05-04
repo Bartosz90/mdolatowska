@@ -2,13 +2,25 @@
 
 .mainSection.homeSection 
     display: block
-    padding-bottom: 70px
+    padding-top: 70px
     overflow: hidden
+    +flexCenter()
     @media (orientation: portrait)
+        padding-top: 0
         padding-bottom: 20px
-    h1, h2 
-        width: 51%
-        text-align: center
+    .headers 
+        width: 50%
+        @media (orientation: portrait)
+            width: 100%
+        h1, h2 
+            width: 100%
+            text-align: center
+    .logoContainer 
+        width: 45%
+        @media (orientation: portrait)
+            width: 100%
+        .logo 
+            width: 100%
     h1 
         margin-top: 15%
         font-size: 70px
@@ -16,7 +28,7 @@
         animation: letterAppear .5s linear forwards 
         @media (orientation: portrait)
             width: 100%
-            margin-top: 40%
+            margin-top: 60px
             font-size: 40px
     h2 
         margin-top: 20px
@@ -34,21 +46,32 @@
             margin-bottom: 20px
             font-size: 30px
     h3 
+        width: 70%
         position: static
+        margin-top: 70px
+        padding-bottom: 60px
         opacity: 0
-        font-size: 30px
+        font-size: 35px
+        color: $green2
+        border-bottom: 2px solid white
         animation: textAppear 1s linear forwards 2s
         @media (orientation: portrait)
             padding: 10px
             font-size: 25px
+
     p 
         padding: 70px 70px 0 70px
         font-size: 24px
         opacity: 0
         animation: textAppear 1s linear forwards 2s
+        color: #fff
         @media (orientation: portrait)
             padding: 10px 10px 0 10px
             font-size: 20px
+    p:nth-of-type(7)
+        padding: 70px
+        @media (orientation: portrait)
+            padding: 10px
 @keyframes textAppear 
     100% 
         opacity: 1

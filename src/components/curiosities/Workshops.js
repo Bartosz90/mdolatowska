@@ -50,94 +50,95 @@ const Workshops = () => {
       id: 0,
       src: w1,
       description:
-        "Drawing into print with Meg Buick; monoprint inspired by 'Utopia' by Szymborska",
+        "1. Drawing into print with Meg Buick; monoprint inspired by 'Utopia' by Szymborska",
     },
     {
       id: 1,
       src: w2,
-      description: "Drawing into print with Meg Buick; ghost print",
+      description: "2. Drawing into print with Meg Buick; ghost print",
     },
     {
       id: 2,
       src: w3,
-      description: "Drawing into print with Meg Buick; ghost print + pastels",
+      description:
+        "3. Drawing into print with Meg Buick; ghost print + pastels",
     },
     {
       id: 3,
       src: w4,
-      description: "Drawing into print with Meg Buick; monoprint",
+      description: "4. Drawing into print with Meg Buick; monoprint",
     },
     {
       id: 4,
       src: w5,
-      description: "Drawing into print with Meg Buick; monoprint + pastels",
+      description: "5. Drawing into print with Meg Buick; monoprint + pastels",
     },
     {
       id: 5,
       src: w6,
-      description: "Drawing into print with Meg Buick; monoprint + pastels",
+      description: "6. Drawing into print with Meg Buick; monoprint + pastels",
     },
     {
       id: 6,
       src: w7,
-      description: "Workshop with Katherine Jones - unsuccessful collagraph",
+      description: "7. Workshop with Katherine Jones - unsuccessful collagraph",
     },
     {
       id: 7,
       src: w8,
-      description: "Workshop with Katherine Jones",
+      description: "8. Workshop with Katherine Jones",
     },
     {
       id: 8,
       src: w9,
-      description: "Workshop with Mark Calazet - sense of space",
+      description: "9. Workshop with Mark Calazet - sense of space",
     },
     {
       id: 9,
       src: w10,
-      description: "Workshop with Mark Calazet - colours of Bristol",
+      description: "10. Workshop with Mark Calazet - colours of Bristol",
     },
     {
       id: 10,
       src: w11,
       description:
-        "Workshop with Mark Calazet - identifying seemengly white colours",
+        "11. Workshop with Mark Calazet - identifying seemengly white colours",
     },
     {
       id: 11,
       src: w12,
       description:
-        "Workshop with Mark Calazet - combination of my favourite colours",
+        "12. Workshop with Mark Calazet - combination of my favourite colours",
     },
     {
       id: 12,
       src: w13,
-      description: "Screen printing workshop",
+      description: "13. Screen printing workshop",
     },
     {
       id: 13,
       src: w14,
-      description: "Lithography workshop",
+      description: "14. Lithography workshop",
     },
     {
       id: 14,
       src: w15,
-      description: "Lithography workshop - white paper",
+      description: "15. Lithography workshop - white paper",
     },
     {
       id: 15,
       src: w16,
-      description: "Etching workshop",
+      description: "16. Etching workshop",
     },
     {
       id: 16,
       src: w17,
-      description: "Etching workshop - less ink",
+      description: "17. Etching workshop - less ink",
     },
     {
       id: 17,
       src: w18,
-      description: "Laser cutting workshop",
+      description: "18. Laser cutting workshop",
     },
   ];
 

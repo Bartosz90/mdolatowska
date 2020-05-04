@@ -7,28 +7,28 @@ const Curiosities = () => {
     {
       id: 1,
       name: "workshops",
-      path: "/mdolatowska/curiosities/workshops",
+      path: "/curiosities/workshops",
       description:
         "something about workshops something about workshops something about workshops something about workshops",
     },
     {
       id: 2,
       name: "exploration phase",
-      path: "/mdolatowska/curiosities/exploration",
+      path: "/curiosities/exploration",
       description:
         "something about exploration something about exploration something about exploration something about exploration",
     },
     {
       id: 3,
-      name: "comics-storyboard",
-      path: "/mdolatowska/curiosities/comics-storyboard",
+      name: "comics - storyboard",
+      path: "/curiosities/comics-storyboard",
       description:
         "something about comics-dummy something about comics-dummy something about comics-dummy something about comics-dummy",
     },
     {
       id: 4,
-      name: "illustrations",
-      path: "/mdolatowska/curiosities/comics-illustration",
+      name: "comics - illustrations",
+      path: "/curiosities/comics-illustration",
       description: "process + finished illustrations",
     },
   ];

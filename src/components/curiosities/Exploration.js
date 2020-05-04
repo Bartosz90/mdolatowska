@@ -44,73 +44,73 @@ const Exploration = () => {
     {
       id: 0,
       src: w1,
-      description: "Mind map",
+      description: "1. Mind map",
     },
     {
       id: 1,
       src: w2,
-      description: "Introduction to 'curiosities'",
+      description: "2. Introduction to 'curiosities'",
     },
     {
       id: 2,
       src: w3,
-      description: "Introducing emotional intelligence",
+      description: "3. Introducing emotional intelligence",
     },
     {
       id: 3,
       src: w4,
-      description: "Anger - collage - newspapers + acrylics",
+      description: "4. Anger - collage - newspapers + acrylics",
     },
     {
       id: 4,
       src: w5,
-      description: "Sadnes - collage - newspapers + acrylics + marker",
+      description: "5. Sadnes - collage - newspapers + acrylics + marker",
     },
     {
       id: 5,
       src: w6,
-      description: "'Utopia' illustration - first attempt; watercolours",
+      description: "6. 'Utopia' illustration - first attempt; watercolours",
     },
     {
       id: 6,
       src: w7,
-      description: "Second attempt - fineliner",
+      description: "7. Second attempt - fineliner",
     },
     {
       id: 7,
       src: w8,
       description:
-        "Poem divided into a series of small illustrations - pen; part 1",
+        "8. Poem divided into a series of small illustrations - pen; part 1",
     },
     {
       id: 8,
       src: w9,
-      description: "Part 2",
+      description: "9. Part 2",
     },
     {
       id: 9,
       src: w10,
-      description: "'Island where all becomes clear'; trying out pastels",
+      description: "10. 'Island where all becomes clear'; trying out pastels",
     },
     {
       id: 10,
       src: w11,
-      description: "Not finished drawing of 'Utopia'",
+      description: "11. Not finished drawing of 'Utopia'",
     },
     {
       id: 11,
       src: w12,
-      description: "Comic book - moodboard",
+      description: "12. Comic book - moodboard",
     },
     {
       id: 12,
       src: w13,
-      description: "",
+      description: "13.",
     },
     {
       id: 13,
       src: w14,
-      description: "",
+      description: "14.",
     },
   ];
   const img = images.map((img, i) => (

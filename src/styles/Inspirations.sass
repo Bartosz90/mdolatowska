@@ -1,0 +1,28 @@
+@import "../index.sass"
+
+.mainSection.Inspirations 
+    min-height: 100vh 
+    padding-top: 100px
+    .inspiration    
+        width: 100vw
+        height: 20vh 
+        +flexCenter()
+        margin: 30px 0
+        h1 
+            padding: 0 10px
+            width: 30%
+            font-size: 35px
+        .images 
+            width: 70% 
+            height: 100%
+            +flexCenter()
+            justify-content: space-around
+            padding: 0 10px
+            .img 
+                width: 22%
+                height: 70%
+                +flexCenter()
+                border: 1px solid $white
+                overflow: hidden
+                img 
+                    height: 100% 
